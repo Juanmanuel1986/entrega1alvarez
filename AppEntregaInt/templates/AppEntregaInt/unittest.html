@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uit test</title>
-</head>
-<body style="background-color: lightblue;">
-    <p>soy el unittest</p>
-    
-</body>
-</html>
+{% extends 'AppEntregaInt/padre.html'%}  
+{% load static %}
+{% block contenidoQueCambia %}
+
+<!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+<h1>unit test</h1>
+<p>aca va lo de unit test</p>
+
+
+
+{% endblock %}

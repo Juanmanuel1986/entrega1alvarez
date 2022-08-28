@@ -7,13 +7,17 @@ import datetime
 # Create your views here.
 
 def inicio(request):
-    return HttpResponse('vista inicio')
+    #return HttpResponse('vista inicio')
+    return render(request, "AppEntregaInt/inicio.html")
 
 def equipo(request):
-    return HttpResponse('vista equipo')    
+    #return HttpResponse('vista equipo')    
+    return render(request, "AppEntregaInt/equipo.html")
 
 def unittest(request):
-    return HttpResponse('vista unittest')       
+    #return HttpResponse('vista unittest')  
+    return render(request, "AppEntregaInt/unittest.html")    
 
 def regressiontest(request):
-    return HttpResponse('vista regressiontest')     
+    #return HttpResponse('vista regressiontest')  
+    return render(request, "AppEntregaInt/regressiontest.html") 

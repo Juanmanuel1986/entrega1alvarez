@@ -4,11 +4,18 @@ from django.template import loader
 from django.template import Template, Context
 import datetime
 from AppEntregaInt.models import equipo
+<<<<<<< HEAD
 #from django.http.request import QueryDict
 
 from AppEntregaInt.models import unittest
 from AppEntregaInt.forms import UnittestFormulario
 
+=======
+<<<<<<< HEAD
+#from django.http.request import QueryDict
+=======
+>>>>>>> ac3d0567313ae445a66f34f1c0359812bedb9e20
+>>>>>>> 28ea0a27e19e03cb81d0ed754a10d12d5759c3d3
 
 # Create your views here.
 """def equipo(request):
@@ -65,12 +72,23 @@ def equipoFormulario(request):
 
             if miFormulario.is_valid:
                   informacion = miFormulario.cleaned_data
+<<<<<<< HEAD
                   vequipo = equipo(nombre=informacion["nombre"], nombreapp=informacion["aplicacion"])
                   vequipo.save()
+=======
+<<<<<<< HEAD
+                  vequipo = equipo(nombre=informacion["nombre"], nombreapp=informacion["aplicacion"])
+                  vequipo.save()
+=======
+                  variable = equipo(nombre=informacion["nombre"], nombreapp=informacion["aplicacion"])
+                  variable.save()
+>>>>>>> ac3d0567313ae445a66f34f1c0359812bedb9e20
+>>>>>>> 28ea0a27e19e03cb81d0ed754a10d12d5759c3d3
                   return render(request, "AppEntregaInt/inicio.html")
       else:
             miFormulario = EquipoFormulario()
 
+<<<<<<< HEAD
       return render(request, "AppEntregaInt/equipoFormulario.html", {"miFormulario": miFormulario})      
 
 
@@ -103,3 +121,6 @@ def unittestFormulario(request):
             miFormulario = UnittestFormulario()
 
       return render(request, "AppEntregaInt/unittestFormulario.html", {"miFormulario": miFormulario})      
+=======
+      return render(request, "AppEntregaInt/equipoFormulario.html", {"miFormulario": miFormulario})      
+>>>>>>> 28ea0a27e19e03cb81d0ed754a10d12d5759c3d3

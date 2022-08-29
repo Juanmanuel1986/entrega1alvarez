@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
     <title>Formulario Equipos</title>
+=======
+    <title>Formulario</title>
+>>>>>>> 366ef49b5f7caea348c29b0c67d71a0f2d9cbcb3
   </head>
   <body>
     {% if miFormulario.errors %}
@@ -12,14 +16,21 @@
     <p style="color: red;"> Están mal los datos, revisar</p>
 
     {% endif %}
+<<<<<<< HEAD
     <p style="color: black;"> Completar con el nombre del equipo, y la aplicacion que quiere registrar.</p>
+=======
+>>>>>>> 366ef49b5f7caea348c29b0c67d71a0f2d9cbcb3
     <form action="" method="POST"> 
         {% csrf_token %}
       
         <table>
             {{ miFormulario.as_table }}
         </table>
+<<<<<<< HEAD
       <br>
+=======
+
+>>>>>>> 366ef49b5f7caea348c29b0c67d71a0f2d9cbcb3
       <input type="submit" value="Enviar" />
     </form>
   </body>
